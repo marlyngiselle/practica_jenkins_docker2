@@ -40,11 +40,6 @@ pipeline {
            }
        }
 
-       stage('prueba') {
-           steps {
-                echo 'Esto es un nuevo cambio'
-           }
-       }
    }
    
 
