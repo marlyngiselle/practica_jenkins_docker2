@@ -11,8 +11,8 @@ pipeline {
 
        stage('build') {
            steps {
-                // sh 'docker stop luna'
-                // sh 'docker rm luna'
+                sh 'docker stop luna'
+                sh 'docker rm luna'
                 sh 'docker build -t mgiselle/${JOB_NAME}:v${BUILD_NUMBER} .'
            }
        }
